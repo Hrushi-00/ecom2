@@ -10,7 +10,7 @@ const Carousele = () => {
 
      const product= productData.map((item)=>
      
-          <Carousel2 name={item.name} image={item.image} price={item.price} description={item.description} />
+          <Carousel2 key={item.id} name={item.name} image={item.image} price={item.price} description={item.description} />
     
      
       )

@@ -7,11 +7,11 @@ const Carousel2 = (props) => {
 
     
      <div className='components'>
-     <p>Summer Collection</p>
+     <p className='first'>Summer Collection</p>
      <h1>{props.name}</h1>
 
     <p className='price'>{props.price}</p>
-    <p>{props.description}</p>
+    <p className='discrip'>{props.description}</p>
     <button>Shop now </button>
      </div>
      <div className='className="product--image"'>

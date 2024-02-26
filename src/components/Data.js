@@ -19,7 +19,7 @@ export const responsive = {
         id:1,
         image:"https://themewagon.github.io/malefashion/img/hero/hero-2.jpg",
         price:"$200",
-        description:"A specialist label creating luxury essentials. Ethically crafted with an unwavering commitment to exceptional quality.",
+        description:"A specialist label creating luxury essentials. Ethically crafted  with an unwavering commitment to exceptional quality.",
         name:"Fall - Winter Collections 2030"
     },
     {
