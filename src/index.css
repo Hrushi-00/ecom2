@@ -8,7 +8,12 @@
   font-family:'Outfit', sans-serif;
   
 }
-
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+} */
 /* body{
   background-color: #000;
 } */
@@ -38,6 +43,7 @@ ul{
   padding: 12px 32px;
   font-size: 1rem;
   text-transform: uppercase;
+  
   background:transparent;
   color: #fff;
   border: 1px solid #fff;

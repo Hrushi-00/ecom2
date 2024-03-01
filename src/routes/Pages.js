@@ -3,7 +3,7 @@ import React from 'react'
 const pages = () => {
   return (
     <div>
-      sfs
+      <h1>Page</h1>
     </div>
   )
 }

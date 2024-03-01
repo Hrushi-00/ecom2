@@ -3,7 +3,8 @@ import React from 'react'
 const Blog = () => {
   return (
     <div>
-      zsdfSF
+     <h1>Bologs</h1>
+
     </div>
   )
 }

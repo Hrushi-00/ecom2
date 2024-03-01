@@ -1,0 +1,38 @@
+.main-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 80px;
+}
+
+.img-first img{
+    margin-top: 350px;
+    width: 100%;
+}
+@media screen and (max-width: 1040px){
+    .img-first img{
+        margin-top: 0px;
+    }
+
+}
+.container .img-Second img{
+    
+    width: 100%;
+   
+}
+
+.container .img-third img{
+    margin-top: 60px; 
+    width: 100%;
+   
+}
+
+ .container a{
+    display: inline-block;
+    color: #111111;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    padding: 3px 0;
+    position: relative;
+}
