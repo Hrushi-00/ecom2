@@ -1,7 +1,7 @@
 import "./NavbarStyle.css"
- 
+import { IoCartOutline } from "react-icons/io5";
 import React,{useState} from 'react'
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import logo from '../assets/logo.png';
 
 import { FaBars, FaTimes } from "react-icons/fa";
@@ -9,6 +9,7 @@ const Navbar = () => {
    const[click,setClick] = useState(false);
   const handleClick =()=>setClick(!click);
   const[color,setColor]=useState(false);
+  const navigate = useNavigate()
   const changeColor = () =>{
     if(window.scrollY >=100){
       setColor(true);
@@ -18,6 +19,11 @@ const Navbar = () => {
     
   }
    window.addEventListener("scroll",changeColor)
+
+
+   const carthandler = () =>{
+    navigate('/addtocart')
+   }
 
 
   return (
@@ -35,6 +41,7 @@ const Navbar = () => {
         placeholder="Search..."
         className="search"
       />
+    
      
     </div>
         <li>
@@ -55,8 +62,11 @@ const Navbar = () => {
             <Link to="/contact">Contact</Link>
         </li>
        
-       
       </ul>
+      <div className="cart" >
+         <IoCartOutline onClick={carthandler}  />
+         <span>0</span>
+      </div>
       <div className="hamburger" onClick={handleClick}>
         {
           click ? (<FaTimes size={20} style={{color:"#000000"}}/> 
