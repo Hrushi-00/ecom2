@@ -1,10 +1,10 @@
 
 import CartWork from './CartWork'
 import CartData from './CartData'
-
+import "./Cart.css";
 import React from 'react'
 
-const Cart = () => {
+const Carts = () => {
   return (
     <div className="work-container">
     <h1 className="project-heading">Product</h1>
@@ -25,4 +25,4 @@ const Cart = () => {
   )
 }
 
-export default Cart
+export default Carts

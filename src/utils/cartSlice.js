@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Addcart = () => {
+const cartSlice = () => {
   return (
     <div>
-      Add to cart data
+      
     </div>
   )
 }
 
-export default Addcart
+export default cartSlice

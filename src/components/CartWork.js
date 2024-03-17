@@ -1,6 +1,6 @@
 import React from "react";
 import "./Cart.css";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 const CartWork = (props) => {
   return (
     <div className="project-card">
@@ -10,9 +10,10 @@ const CartWork = (props) => {
         <div className="pro-derails">
           <p>{props.price}</p>
           <div className="pro-btns">
-            <NavLink to={props.view} className="btn1">
+            {/* <NavLink to={props.view} className="btn1">
               Add to Cart
-            </NavLink>
+            </NavLink> */}
+            <button to={props.view} className="btn1">Add to Cart</button>
           </div>
         </div>
       </div>

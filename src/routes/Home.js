@@ -2,8 +2,10 @@ import React from 'react'
 import Navbar from '../components/Navbar'
 
 import Carousel from '../components/Carousel'
-import Cart from '../components/Cart'
+
 import ClothingCollections from '../components/ClothingCollections'
+import Carts from '../components/Carts'
+
 
 
 const Home = () => {
@@ -12,7 +14,8 @@ const Home = () => {
       <Navbar />
       <Carousel />
     <ClothingCollections />
-    <Cart />
+    <Carts />
+
    
     </div>
   )
