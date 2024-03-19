@@ -2,7 +2,8 @@ import React from "react";
 import "./Cart.css";
 // import { NavLink } from "react-router-dom";
 const CartWork = (props) => {
-  return (
+
+   return (
     <div className="project-card">
       <div className="product">
         <img src={props.imgsrc} alt="" />

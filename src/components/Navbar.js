@@ -3,6 +3,7 @@ import { IoCartOutline } from "react-icons/io5";
 import React,{useState} from 'react'
 import { Link, useNavigate } from "react-router-dom"
 import logo from '../assets/logo.png';
+import { useSelector } from "react-redux";
 
 import { FaBars, FaTimes } from "react-icons/fa";
 const Navbar = () => {
@@ -24,8 +25,8 @@ const Navbar = () => {
    const carthandler = () =>{
     navigate('/addtocart')
    }
-
-
+ // selector
+   const cartItems =useSelector((store)=>store.cart.items)
   return (
     <div className={color ? "header header-bg" : "header"}>
      
@@ -65,7 +66,7 @@ const Navbar = () => {
       </ul>
       <div className="cart" >
          <IoCartOutline onClick={carthandler}  />
-         <span>0</span>
+         <span>{cartItems.length}</span>
       </div>
       <div className="hamburger" onClick={handleClick}>
         {
