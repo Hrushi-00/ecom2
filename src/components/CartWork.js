@@ -3,25 +3,34 @@ import "./Cart.css";
 import { useDispatch } from "react-redux";
 import { addItem } from "../utils/cartSlice";
 // import { NavLink } from "react-router-dom";
-const CartWork = (props,cartData) => {
-  const dispatch=useDispatch()
-const handleAddItem=()=>{
-  dispatch(addItem(cartData))
+const CartWork = (props,items) => {
 
+  const dispatch=useDispatch()
+  // dispatch action
+const handleAddItem=()=>{
+//   dispatch(addItem(items))
+// console.log(items);
+
+const itemToAdd = {
+  imgsrc: props.imgsrc,
+  title: props.title,
+  price: props.price,
+};
+dispatch(addItem(itemToAdd));
 
 }
    return (
     <div className="project-card">
       <div className="product">
         <img src={props.imgsrc} alt="" />
-        <h2 className="project-title">{props.title}</h2>
+        <h2 className="project-title">{props.title}</h2>  
         <div className="pro-derails">
           <p>{props.price}</p>
           <div className="pro-btns">
             {/* <NavLink to={props.view} className="btn1">
               Add to Cart
             </NavLink> */}
-            <button to={props.view} className="btn1" onClick={()=>handleAddItem(cartData)}>Add to Cart</button>
+            <button to={props.view} className="btn1" onClick={()=>handleAddItem()}>Add to Cart</button>
           </div>
         </div>
       </div>

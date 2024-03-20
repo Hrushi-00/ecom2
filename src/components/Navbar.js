@@ -22,12 +22,13 @@ const Navbar = () => {
    window.addEventListener("scroll",changeColor)
 
 
-   const carthandler = () =>{
-    navigate('/addtocart')
-   }
+    const carthandler = () =>{
+      navigate('/addtocart')
+    }
  // selector
    const cartItems =useSelector((store)=>store.cart.items)
-  //  console.log(cartItems);
+   console.log(cartItems);
+
   return (
     <div className={color ? "header header-bg" : "header"}>
      

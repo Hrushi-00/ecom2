@@ -8,40 +8,41 @@ import pro7 from"../assets/product/product-2.jpg"
 import pro8 from"../assets/product/product-4.jpg"
 
 
-const cartData=[
+const fetchApi=[
     {
     imgsrc1:pro1,
-    title:"shirts",
+    title:"shose",
   
     price:"12$",
 },
     {
         imgsrc1:pro2,
-    title:"shirts",
+    title:"perfume",
     
     price:"12$",
 },
     {
     imgsrc1:pro3,
-    title:"shirts",
+    title:"bag",
     
     price:"12$",
 },
     {
     imgsrc1:pro4,
-    title:"shirts",
+    title:"jacket",
     
     price:"12$",
 },
     {
     imgsrc1:pro5,
-    title:"shirts",
+    title:"bag",
     
     price:"12$",
 },
     {
+
     imgsrc1:pro6,
-    title:"shirts",
+    title:"go",
     
     price:"12$",
 },
@@ -60,4 +61,4 @@ const cartData=[
 
 
 ] 
-export default cartData;
+export default fetchApi;
