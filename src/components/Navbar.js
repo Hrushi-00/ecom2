@@ -27,6 +27,7 @@ const Navbar = () => {
    }
  // selector
    const cartItems =useSelector((store)=>store.cart.items)
+  //  console.log(cartItems);
   return (
     <div className={color ? "header header-bg" : "header"}>
      

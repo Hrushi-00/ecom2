@@ -1,8 +1,15 @@
 import React from "react";
 import "./Cart.css";
+import { useDispatch } from "react-redux";
+import { addItem } from "../utils/cartSlice";
 // import { NavLink } from "react-router-dom";
-const CartWork = (props) => {
+const CartWork = (props,cartData) => {
+  const dispatch=useDispatch()
+const handleAddItem=()=>{
+  dispatch(addItem(cartData))
 
+
+}
    return (
     <div className="project-card">
       <div className="product">
@@ -14,7 +21,7 @@ const CartWork = (props) => {
             {/* <NavLink to={props.view} className="btn1">
               Add to Cart
             </NavLink> */}
-            <button to={props.view} className="btn1">Add to Cart</button>
+            <button to={props.view} className="btn1" onClick={()=>handleAddItem(cartData)}>Add to Cart</button>
           </div>
         </div>
       </div>
