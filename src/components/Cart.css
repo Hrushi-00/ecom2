@@ -38,3 +38,7 @@
 .pro-derails p{
     padding: 20px 0;
 }
+
+.adddata{
+   display: flex;
+}
