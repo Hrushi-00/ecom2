@@ -2,7 +2,7 @@ import React from 'react'
 const Carousel2 = (props) => {
   return (
    
- <div className='card'>
+ <div className='cards'>
 
 
      <div className='components'>
@@ -11,7 +11,7 @@ const Carousel2 = (props) => {
      <p className='discrip'>{props.description}</p>
      <button>Shop now </button>
      </div>
-     <div className='className="product--image"'>
+     <div className="product--image">
      <img src={props.image}  alt='product image'/>
      </div>
 </div>

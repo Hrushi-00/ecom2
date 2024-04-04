@@ -1,10 +1,16 @@
 import React from 'react'
 
+import Navbar from '../components/Navbar'
+// import Multipalcarts from '../components/multipalcarts/Multipalcarts'
+
+
 const pages = () => {
   return (
-    <div>
-      <h1>Page</h1>
-    </div>
+    
+   <div>
+    <Navbar />
+ {/* <Multipalcarts /> */}
+   </div>
   )
 }
 
