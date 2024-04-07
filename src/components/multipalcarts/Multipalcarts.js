@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import '../multipalcarts/AccordionComponent.css'; // Import CSS file with styles
 
@@ -28,6 +27,4 @@ const Multipalcarts = () => {
   );
 };
 
-
-
-export default Multipalcarts
+export default Multipalcarts;

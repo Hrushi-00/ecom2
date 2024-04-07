@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Navbar from '../components/Navbar'
-// import Multipalcarts from '../components/multipalcarts/Multipalcarts'
+import Multipalcarts from '../components/multipalcarts/Multipalcarts'
 
 
 const pages = () => {
@@ -9,7 +9,7 @@ const pages = () => {
     
    <div>
     <Navbar />
- {/* <Multipalcarts /> */}
+ <Multipalcarts />
    </div>
   )
 }
