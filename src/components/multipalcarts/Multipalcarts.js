@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import '../multipalcarts/AccordionComponent.css'; // Import CSS file with styles
-
+import '../multipalcarts/AccordionComponent.css'; 
 const Multipalcarts = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
@@ -22,7 +21,7 @@ const Multipalcarts = () => {
         </div>
         <div className="backdrop"></div>
       </div>
-      {/* Repeat the card structure for other items */}
+  
     </div>
   );
 };

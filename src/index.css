@@ -10,15 +10,7 @@
   margin: 0 auto;
   
 }
-/* #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-} */
-/* body{
-  background-color: #000;
-} */
+
 h1,h4,p,a{
   color: #070707;
   text-decoration: none;
@@ -38,10 +30,7 @@ ul{
   cursor: pointer;
 }
 .btn-light{
-  /* border: 1px solid #fff;
-  padding: 7px 32px;
-  background:transparent;
-  color: #fff; */
+
   padding: 12px 32px;
   font-size: 1rem;
   text-transform: uppercase;
