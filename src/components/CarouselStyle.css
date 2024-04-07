@@ -48,22 +48,18 @@
   position: absolute;
   margin: 200px 170px;
 }
-
-.discrip {
-  max-width: 500px;
-}
-
-/* Media query for smaller screens */
-
 @media (max-width: 768px) {
   .components {
     margin: 150px 50px;
   }
 }
-
-/* Media query for extra small screens */
-@media (max-width: 576px) {
+/* @media (max-width: 576px) {
   .components {
     margin: 200px 30px;
   }
+} */
+
+
+.discrip {
+  max-width: 500px;
 }
