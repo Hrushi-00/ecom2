@@ -8,14 +8,14 @@
      
   width: 100%;    
     object-fit:fill;  
-    zoom: 1.2  ;
+    /* zoom: 1.2  ; */
   
 }
-@media screen and (max-width: 768px){
+/* @media screen and (max-width: 768px){
   .product--image {
     zoom:0;
   }
-}
+} */
 .price {
   color: grey;
   font-size: 22px;
