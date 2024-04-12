@@ -1,6 +1,11 @@
 .first {
-  color: red;
+  
   text-transform: uppercase;
+  background: linear-gradient(50deg,#ea0505,#ffea05);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
 }
 
 .price {
@@ -45,4 +50,31 @@
 
 .discrip {
   max-width: 500px;
+  background: linear-gradient(90deg,#0b536e,#ac2323);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+h1{
+  background: linear-gradient(90deg,#0b536e,#ac2323);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.components.slide-in {
+  animation: slideIn 0.5s ease forwards;
 }

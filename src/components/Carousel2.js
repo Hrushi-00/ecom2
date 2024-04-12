@@ -1,9 +1,17 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import './CarouselStyle.css';
 
 const Carousel2 = (props) => {
+  const [animate, setAnimate] = useState(false);
+
+  useEffect(() => {
+    // Trigger animation on component mount
+    setAnimate(true);
+  }, []);
+
   return (
     <div className='cards'>
-      <div className='components'>
+      <div className={`components ${animate ? 'slide-in' : ''}`}>
         <p className='first'>Summer Collection</p>
         <h1>{props.name}</h1>
         <p className='discrip'>{props.description}</p>
