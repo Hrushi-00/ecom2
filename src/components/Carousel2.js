@@ -10,7 +10,7 @@ const Carousel2 = (props) => {
   }, []);
 
   return (
-    <div className='cards'>
+    <div className={`cards ${animate ? 'slide-in' : ''}` }>
       <div className={`components ${animate ? 'slide-in' : ''}`}>
         <p className='first'>Summer Collection</p>
         <h1>{props.name}</h1>

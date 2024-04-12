@@ -76,5 +76,8 @@ h1{
 }
 
 .components.slide-in {
-  animation: slideIn 0.5s ease forwards;
+  animation: slideIn 0.9s ease forwards;
+}
+.cards.slide-in {
+  animation: slideIn 0.9s ease forwards;
 }
