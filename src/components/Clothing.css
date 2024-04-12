@@ -74,3 +74,18 @@
     width: 18%;
 }
 
+@keyframes slideIns {
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .main-container.slide-in {
+    animation: slideIn 0.9s ease forwards;
+  }
+  
