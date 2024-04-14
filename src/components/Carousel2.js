@@ -5,7 +5,7 @@ const Carousel2 = (props) => {
   const [animate, setAnimate] = useState(false);
 
   useEffect(() => {
-    // Trigger animation on component mount
+ 
     setAnimate(true);
   }, []);
 
@@ -13,9 +13,9 @@ const Carousel2 = (props) => {
     <div className={`cards ${animate ? 'slide-in' : ''}` }>
       <div className={`components ${animate ? 'slide-in' : ''}`}>
         <p className='first'>Summer Collection</p>
-        <h1>{props.name}</h1>
+        <h1 className='heding'>{props.name}</h1>
         <p className='discrip'>{props.description}</p>
-        <button>Shop now</button>
+        <button className='btn1' >Shop now</button>
       </div>
       <div className="product--image">
         <img src={props.image} alt='product image' />

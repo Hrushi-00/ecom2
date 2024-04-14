@@ -25,7 +25,7 @@ const Navbar = () => {
     const carthandler = () =>{
       navigate('/addtocart')
     }
- // selector
+
    const cartItems =useSelector((store)=>store.cart.items)
   
 

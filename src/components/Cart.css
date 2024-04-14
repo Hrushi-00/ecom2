@@ -12,28 +12,36 @@
      
 }
 .project-card{
-    padding:30px 0;
+    padding:30px ;
 }
 .pro-btns{
     top: 30px;
 }
 .btn1{
 
-   padding: 12px 32px;
-  font-size: 1rem;
-  text-transform: uppercase;
-  background:transparent;
-  
-  border: 1px solid #000000;
-  font-weight: 600;
-  cursor: pointer;
+   padding: 10px 26px;
+background-color: #f9fafb;
+  border: 2px solid #111827;
 
-}
+  cursor: pointer;
+  transition: all 0.3s;
+  }
+  .btn1:hover::after{
+    translate: 0;
+  }
+  .btn1::after{
+    content: "";
+    inset: 0;
+    background-color: #111827;
+    border-radius: inherit;
+    translate: 6px 6px;
+    transition: 0.25s;
+    z-index: -1;
+  }
 .btn1:hover
 {
-  background-color: rgba(255, 255, 255, 0.2);
-  /* color: #fff; */
-  transition: 0.3s;
+  background-color: #111827;
+  color:#f9fafb;
 }
 .pro-derails p{
     padding: 20px 0;

@@ -8,7 +8,7 @@ const ClothingCollections = () => {
   const [animate, setAnimate] = useState(false);
 
   useEffect(() => {
-    // Trigger animation on component mount
+   
     setAnimate(true);
   }, []);
 
