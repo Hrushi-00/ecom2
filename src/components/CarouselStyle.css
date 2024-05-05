@@ -12,11 +12,14 @@
   color: grey;
   font-size: 22px;
 }
-
+.product--image{
+  width: auto;
+}
 
 
 .cards {
   margin-top: 90px;
+  
 }
 
 @media screen and (max-width: 768px) {
