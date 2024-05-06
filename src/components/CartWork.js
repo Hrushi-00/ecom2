@@ -14,8 +14,9 @@ const CartWork = (props) => {
     <div className="project-card">
       <div className="product">
         <img src={props.items.imgsrc1} alt="" />
+        
+        <div className="pro-details">
         <h2 className="project-title">{props.items.title}</h2>
-        <div className="pro-derails">
           <p>{props.items.price}</p>
           <div className="pro-btns">
             <button className="btn1" onClick={handleAddItem}>

@@ -20,18 +20,9 @@
   transition: transform 0.3s ease;
 }
 .project-card:hover {
-  transform: translateY(-5px); /* Move the card up slightly on hover */
+  transform: translateY(-5px); 
 }
-@keyframes slideIn {
-  from {
-    opacity: 0;
-    transform: translateY(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+
 .pro-btns{
     top: 30px;
 }
@@ -61,10 +52,64 @@ background-color: #f9fafb;
   background-color: #111827;
   color:#f9fafb;
 }
-.pro-derails p{
-    padding: 20px 0;
-}
+
 
 .adddata{
    display: flex;
+}
+.project-title {
+  margin-top: 10px;
+  font-size: 18px; 
+  color: #333; 
+}
+
+.pro-details  {
+  display:grid;
+  margin-top: 5px;
+  margin-left: 20px;
+  font-size: 14px;  
+  color: #666;    
+}
+.pro-details p{
+  font-weight: 700;
+  background: linear-gradient(90deg,#0b536e,#ac2323);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.pro-btns {
+  margin-top: 15px; 
+}
+
+.btn1 {
+  padding: 10px 26px;
+  background-color: #f9fafb;
+  border: 2px solid #111827;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn1:hover::after {
+  transform: translate(0);
+}
+
+.btn1::after {
+  content: "";
+  inset: 0;
+  background-color: #111827;
+  border-radius: inherit;
+  transform: translate(6px, 6px);
+  transition: 0.25s;
+  z-index: -1;
+}
+
+.btn1:hover {
+  background-color: #111827;
+  color: #f9fafb;
+}
+.project-title {
+  background: linear-gradient(90deg,#0b536e,#ac2323);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
