@@ -22,6 +22,10 @@
 .nav-menu li
 {
 padding: 0 1rem;
+background: linear-gradient(90deg,#0b536e,#ac2323);
+-webkit-background-clip: text;
+background-clip: text;
+-webkit-text-fill-color: transparent;
 }
 .nav-menu li a
 {
