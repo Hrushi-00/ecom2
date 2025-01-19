@@ -9,11 +9,15 @@
 }
 .project-heading {
     text-align: center;
+    background: linear-gradient(90deg,#ac2323,#0b536e);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
      
 }
 .project-card{
   padding: 30px;
-  box-shadow: 0px 4px 8px rgba(238, 3, 3, 0.1);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   animation-name: slideIn;
   animation-duration: 0.5s;
   animation-timing-function: ease;
@@ -27,7 +31,7 @@
     top: 30px;
 }
 .btn1{
-
+/* margin:100px 0px 0px 90px; */
    padding: 10px 26px;
 background-color: #f9fafb;
   border: 2px solid #111827;
@@ -108,6 +112,61 @@ background-color: #f9fafb;
   color: #f9fafb;
 }
 .project-title {
+  background: linear-gradient(90deg,#0b536e,#ac2323);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.remove-btn{
+  padding: 10px 26px;
+  background-color: #f9fafb;
+    border: 2px solid #111827;
+  margin-left: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.remove-btn::after{
+  content: "";
+  inset: 0;
+  background-color: #111827;
+  border-radius: inherit;
+  translate: 6px 6px;
+  transition: 0.25s;
+  z-index: -1;
+}
+.remove-btn:hover
+{
+background-color: #111827;
+color:#f9fafb;
+}
+.total-price{
+  margin-top: 50px;
+  margin-left:40%;
+}
+.btn2{
+  padding: 10px 26px;
+  background-color: #f9fafb;
+    border: 2px solid #111827;
+  margin: 100px 0px 0px 120px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.btn2::after{
+  content: "";
+  inset: 0;
+  background-color: #111827;
+  border-radius: inherit;
+  translate: 6px 6px;
+  transition: 0.25s;
+  z-index: -1;
+}
+.btn2:hover
+{
+background-color: #111827;
+color:#f9fafb;
+}
+.cart-container h1{
+  margin: 20px 40px;
   background: linear-gradient(90deg,#0b536e,#ac2323);
   -webkit-background-clip: text;
   background-clip: text;
