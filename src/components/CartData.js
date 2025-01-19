@@ -10,49 +10,57 @@ import pro8 from"../assets/product/product-4.jpg"
 
 const fetchApi=[
     {
+    id:1,
     imgsrc1:pro1,
     title:"shose",
   
     price:"12$",
 },
-    {
+    {  id:2,
+
         imgsrc1:pro2,
     title:"perfume",
     
     price:"12$",
 },
     {
+        
+        id:3,
     imgsrc1:pro3,
     title:"bag",
     
     price:"12$",
 },
     {
+        id:4,
     imgsrc1:pro4,
     title:"jacket",
     
     price:"12$",
 },
     {
+        id:5,
     imgsrc1:pro5,
     title:"bag",
     
     price:"12$",
 },
     {
-
+        id:6,
     imgsrc1:pro6,
     title:"go",
     
     price:"12$",
 },
     {
+        id:7,
     imgsrc1:pro7,
     title:"shirts",
     
     price:"12$",
 },
     {
+        id:8,
     imgsrc1:pro8,
     title:"shirts",
     

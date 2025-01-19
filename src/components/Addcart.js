@@ -1,13 +1,18 @@
-import React from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import Navbar from '../components/Navbar';
-import './Cart.css';
-import { clearCart } from '../utils/cartSlice';
-import ProductSummaryPage from './CartList';
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import Navbar from "../components/Navbar";
+import "./Cart.css";
+import { clearCart } from "../utils/cartSlice";
+import ProductSummaryPage from "./CartList";
 
 const Addcart = () => {
   const cartItems = useSelector((store) => store.cart.items);
   const dispatch = useDispatch();
+
+  useEffect(() => {
+    // Synchronize cart items to local storage whenever they change
+    localStorage.setItem("cartItems", JSON.stringify(cartItems));
+  }, [cartItems]);
 
   const handleClearCart = () => {
     dispatch(clearCart());
@@ -15,9 +20,7 @@ const Addcart = () => {
 
   return (
     <div>
-     
       <Navbar />
-
       <div className="cart-container">
         <button className="btn2" onClick={handleClearCart}>
           Clear Cart
