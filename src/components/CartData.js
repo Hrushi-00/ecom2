@@ -13,6 +13,7 @@ const fetchApi=[
     id:1,
     imgsrc1:pro1,
     title:"shose",
+    rating: 3.5,
   
     price:"12$",
 },
@@ -22,6 +23,7 @@ const fetchApi=[
     title:"perfume",
     
     price:"12$",
+    rating: 4.5,
 },
     {
         
@@ -30,6 +32,7 @@ const fetchApi=[
     title:"bag",
     
     price:"12$",
+    rating: 2.5,
 },
     {
         id:4,
@@ -37,6 +40,7 @@ const fetchApi=[
     title:"jacket",
     
     price:"12$",
+    rating: 4.5,
 },
     {
         id:5,
@@ -44,6 +48,7 @@ const fetchApi=[
     title:"bag",
     
     price:"12$",
+    rating: 5,
 },
     {
         id:6,
@@ -51,6 +56,7 @@ const fetchApi=[
     title:"go",
     
     price:"12$",
+    rating: 2.5,
 },
     {
         id:7,
@@ -58,6 +64,7 @@ const fetchApi=[
     title:"shirts",
     
     price:"12$",
+    rating: 4.5,
 },
     {
         id:8,
@@ -65,6 +72,7 @@ const fetchApi=[
     title:"shirts",
     
     price:"12$",
+    rating: 4.5,
 },
 
 

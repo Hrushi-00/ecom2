@@ -1,4 +1,4 @@
-/* Sucessful payment */
+Sucessful payment
 
 .order-success {
     text-align: center;
@@ -125,13 +125,13 @@ input, select {
     border-radius: 4px;
     margin-top: 5px;
 }
-
+/* 
 button {
     background-color: #080808;
     color: #fff;
     padding: 10px 25px;
     border: none;
-     /* margin-top: 20px;   */
+     margin-top: 20px;  
     font-size: 20px;
 }
 
@@ -144,4 +144,4 @@ button:hover {
     .container {
         max-width: 100%;
     }
-}
+} */

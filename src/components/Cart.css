@@ -190,3 +190,25 @@ margin:30px 0px 0px -125px;
      margin:30px 0px 0px -125px;
   }
 }
+
+.rating-stars {
+  display: flex;
+  gap: 2px;
+}
+
+.star {
+  font-size: 25px;
+  color: rgb(222, 131, 12); /* Full star color */
+}
+
+.star.empty {
+  color: lightgray; /* Empty star color */
+}
+
+.star.half {
+  color: rgb(222, 131, 12);
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  width: 9px;
+}

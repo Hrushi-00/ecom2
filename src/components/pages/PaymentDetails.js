@@ -29,6 +29,7 @@ const CheckoutForm = () => {
         <Link to="/paymentsucess" type="button" className="payment-btn">
           Payment
         </Link>
+      
       </form>
     </div>
   );

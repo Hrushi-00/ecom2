@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+  
+  main-head {
+    padding: 20px;
+    display: flex;
+  }
+   
+  .head h2 {
+    font-size: 24px;
+    color: #888;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .head h2 .highlight {
+    font-weight: bold;
+    color: #000;
+  }
+  
+  .contents-info {
+    /* display: flex; */
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .product-info {
+    position: relative;
+  }
+  
+  /* .product-image {
+    width: 400px;
+    border-radius: 8px;
+  } */
+  
+  .sale-price {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: -10px;
+    right: 10px;
+    background-color: #000;
+    color: #fff;
+    padding:28px 20px 0px 30px;  
+    font-size: 14px;
+    border-radius:50%;
+  }
+  
+  .deal-info {
+    text-align: left;
+  }
+  
+  .deal-title {
+    color: red;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .product-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  /* .timer {
+    display: flex;
+    gap: 5px;
+    font-size: 16px;
+    margin: 10px 0;
+  } */
+  
+  .timer span {
+    display: inline-block;
+    font-weight: bold;
+  }
+  
+  .timer small {
+    font-weight: normal;
+    font-size: 12px;
+  }
+  
+  .shop-now {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  
+  .shop-now:hover {
+    background-color: #444;
+  }

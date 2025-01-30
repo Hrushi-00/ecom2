@@ -5,6 +5,7 @@ import Carousel from '../components/Carousel'
 
 import ClothingCollections from '../components/ClothingCollections'
 import Carts from '../components/Carts'
+import Seal from '../components/Seal'
 
 
 
@@ -15,6 +16,7 @@ const Home = () => {
       <Carousel />
     <ClothingCollections />
     <Carts />
+    <Seal />
 
    
     </div>

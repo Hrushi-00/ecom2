@@ -9,6 +9,9 @@ import Addcart from "./components/Addcart";
 import { Route, Routes } from "react-router-dom";
 import { Provider } from "react-redux";
 import appStore from "./utils/appStore";
+import PaymentDetails from "./components/pages/PaymentDetails"
+import PaymentSucess from "./components/pages/PaymentSucess"
+
 const App = () => {
   return (
     <Provider store={appStore}>
@@ -22,6 +25,8 @@ const App = () => {
       <Route path="/blog" element={<Blog/>} />
       <Route path="/contact" element={<Contact/>} />
       <Route path="/Addtocart" element={<Addcart />}/>
+      <Route path="/paymentdetail" element={<PaymentDetails/>} />
+      <Route path="/paymentsucess" element={<PaymentSucess/>}/>
      
     </Routes>
     
