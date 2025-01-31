@@ -19,7 +19,7 @@
 }
 @media screen and (max-width: 500px){
   .product--image img{
-    height: 70vh;
+    height: 75vh;
   }
 }
 
@@ -80,3 +80,4 @@ h1{
 .cards.slide-in {
   animation: slideIn 0.9s ease forwards;
 }
+

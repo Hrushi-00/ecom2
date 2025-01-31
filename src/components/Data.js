@@ -20,14 +20,14 @@ export const responsive = {
         image:"https://themewagon.github.io/malefashion/img/hero/hero-2.jpg",
     
         description:"A specialist label creating luxury essentials. Ethically crafted  with an unwavering commitment to exceptional quality.",
-        name:"Fall - Winter Collections 2030"
+        name:"Fall - Winter Collections 2025"
     },
     {
         id:2,
         image:"https://themewagon.github.io/malefashion/img/hero/hero-1.jpg",
      
         description:"A specialist label creating luxury essentials. Ethically  crafted with an unwavering commitment to exceptional quality.",
-        name:"Fall - Winter Collections 2030"
+        name:"Fall - Winter Collections 2025"
     },
     
   ]

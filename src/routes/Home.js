@@ -10,9 +10,11 @@ import Seal from '../components/Seal'
 
 
 const Home = () => {
+  
+  
   return (
-    <div> 
-      <Navbar />
+    <div style={{ position: 'relative', zIndex: 0 }}> 
+      <Navbar/>
       <Carousel />
     <ClothingCollections />
     <Carts />

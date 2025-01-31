@@ -65,10 +65,7 @@ left:0 ;
 }
 }
 
-  .search{
-    border-radius: 20px;
-    padding:5px 10px;
-  }
+  
 
 
   .cart{
@@ -81,3 +78,71 @@ left:0 ;
     bottom: 20px;
     right: 4px;
   }
+  .search-bar{
+    font-size: 25px;
+    cursor: pointer;
+  }
+  .cross{
+    margin-left: 48%;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 28px;
+    line-height: 28px;
+    top: 30px;
+    cursor: pointer;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  @media screen and (max-width: 1040px) {
+    .cross{
+        margin-left: 42%;
+    }
+  }
+  .search-write{
+    margin-top: 20%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    border-bottom: 1px solid rgb(69, 78, 69);
+    }
+@media screen and (max-width: 1040px) {
+    .search-write{
+        margin-top: 80%;
+    }
+}
+
+    .Search-input{
+        height: 100vh;
+        width: 100%;
+        background-color:#000 ;
+        position: fixed;
+        z-index: 100;
+    }
+    .Search-input input{
+        width: 45%;
+        margin-left:30%;
+        font-size: 40px;
+    }
+    @media screen and (max-width: 1040px){
+        .Search-input input{
+            width: 70%;
+            margin-left:20%;
+            font-size: 20px;
+        }
+    }

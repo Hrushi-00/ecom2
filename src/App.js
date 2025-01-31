@@ -13,6 +13,7 @@ import PaymentDetails from "./components/pages/PaymentDetails"
 import PaymentSucess from "./components/pages/PaymentSucess"
 
 const App = () => {
+  
   return (
     <Provider store={appStore}>
   

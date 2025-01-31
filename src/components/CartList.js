@@ -67,7 +67,7 @@ const ProductSummaryPage = ({ items }) => {
                   </button>
                   <button
                     className="remove-btn"
-                    onClick={() => dispatch(removeItem(item.id))} // Pass the correct ID here
+                    onClick={() => dispatch(removeItem(item.id))}
                   >
                     Remove
                   </button>
