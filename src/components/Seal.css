@@ -1,42 +1,73 @@
 body {
-    font-family: Arial, sans-serif;
+   
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+
   }
   
-  main-head {
-    padding: 20px;
+  .main-head {
+        background-color: #f3f2ee;
+    margin-top: 90px;
+    padding: 80px;
     display: flex;
+  }
+  @media screen and (max-width: 1040px) {
+    .main-head{
+      display: block;
+      padding: 0px;
+    }
   }
    
   .head h2 {
-    font-size: 24px;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 300;
+    font-size: 40px;
     color: #888;
-    display: flex;
-    gap: 10px;
+    gap: 20px;
+    display:grid;
+   
   }
-  
-  .head h2 .highlight {
-    font-weight: bold;
+  @media screen and (max-width: 1040px){
+    .head h2{
+      padding: 0px 40px;
+      
+    }
+  }
+  .info-name
+  {
     color: #000;
+   margin-top: 20px;
+   font-weight: 300;
+   font-size: 40px;
   }
+ 
   
   .contents-info {
-    /* display: flex; */
+    display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
+  }
+  @media screen and (max-width: 1040px) {
+    .contents-info{
+      display: block;
+    }
   }
   
   .product-info {
     position: relative;
   }
   
-  /* .product-image {
+  .product-image {
     width: 400px;
     border-radius: 8px;
-  } */
+  }
+  @media screen and (max-width: 1040px){
+    .product-image{
+      margin-top: 20px;
+      width: 300px;
+    }
+  }
   
   .sale-price {
     position: absolute;
@@ -50,9 +81,26 @@ body {
     font-size: 14px;
     border-radius:50%;
   }
+  @media screen and (max-width: 1040px){
+    .sale-price{
+      right: 40px;
+      top: -15px;
+    }
+  }
   
   .deal-info {
-    text-align: left;
+    padding: 20px;
+   
+  }
+  .deal-info p{
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+    margin: 10px;
+  }
+  .deal-info h3{
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
   }
   
   .deal-title {
@@ -62,22 +110,20 @@ body {
     text-transform: uppercase;
   }
   
-  .product-title {
-    font-size: 20px;
-    font-weight: bold;
-    margin: 10px 0;
-  }
   
-  /* .timer {
+  
+  .timer {
     display: flex;
     gap: 5px;
     font-size: 16px;
     margin: 10px 0;
-  } */
+  }
   
   .timer span {
     display: inline-block;
     font-weight: bold;
+    margin-bottom: 13px;
+    padding: 20px 20px 0px 20px;
   }
   
   .timer small {
@@ -85,17 +131,31 @@ body {
     font-size: 12px;
   }
   
-  .shop-now {
-    padding: 10px 20px;
-    background-color: #000;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    text-transform: uppercase;
-  }
+  .shop-now{
+
+    padding: 10px 26px;
+ background-color: #f9fafb;
+   border: 2px solid #111827;
+ 
+   cursor: pointer;
+   transition: all 0.3s;
+   }
+   .shop-now:hover::after{
+     translate: 0;
+   }
+   .shop-now::after{
+     content: "";
+     inset: 0;
+     background-color: #111827;
+     border-radius: inherit;
+     translate: 6px 6px;
+     transition: 0.25s;
+     z-index: -1;
+   }
+ .shop-now:hover
+ {
+   background-color: #111827;
+   color:#f9fafb;
+ }
   
-  .shop-now:hover {
-    background-color: #444;
-  }
+

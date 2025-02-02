@@ -33,12 +33,13 @@ const Seal = () => {
   }, []);
 
   return (
+   <>
     <div className="main-head">
       {/* Header Section */}
       <div className="head">
         <h2>
-          Clothings Hot
-          <span className="highlight">Shoe Collection</span>
+          Clothings Hot<br/>
+          <span className="info-name">Shoe Collection</span>
           Accessories
         </h2>
       </div>
@@ -54,12 +55,11 @@ const Seal = () => {
         {/* Deal Info Section */}
         <div className="deal-info">
           <p className="deal-title">DEAL OF THE WEEK</p>
-          <h3 className="product-title">Multi-pocket Chest Bag Black</h3>
+          <h3 className="product-title">Multi-pocket Chest<br/> Bag Black</h3>
           <div className="timer">
             <span>
               {timeLeft.days} <small>Days</small>
-            </span>{" "}
-            :{" "}
+            </span>{" "}:{" "}
             <span>
               {timeLeft.hours} <small>Hours</small>
             </span>{" "}
@@ -76,6 +76,7 @@ const Seal = () => {
         </div>
       </div>
     </div>
+   </>
   );
 };
 

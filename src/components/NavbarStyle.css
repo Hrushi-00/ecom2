@@ -134,6 +134,20 @@ left:0 ;
         position: fixed;
         z-index: 100;
     }
+    @keyframes slideIn {
+        from {
+          transform: translateX(-100%);
+          opacity: 0;
+        }
+        to {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+      
+      .Search-input.slide-in {
+        animation: slideIn 0.9s ease forwards;
+      }
     .Search-input input{
         width: 45%;
         margin-left:30%;
