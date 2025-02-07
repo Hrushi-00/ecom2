@@ -1,0 +1,33 @@
+.project-info{
+    background-color:#ffff;
+}
+
+.fashion-item a {
+    display: inline-block;
+    color: #111111;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    padding: 3px 0;
+    position: relative;  
+    overflow: hidden;  
+}
+
+.fashion-item a::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #111111; /* Default line color */
+    content: "";
+    transition: all 0.3s ease-in-out;
+    transform: scaleX(0); 
+    transform-origin: left;
+}
+
+.fashion-item a:hover::after {
+    transform: scaleX(1);
+    background: #B33030 /* Change to your desired color */
+}
