@@ -36,12 +36,11 @@ const Seal = () => {
    <>
     <div className="main-head">
       {/* Header Section */}
-      <div className="head">
-        <h2>
-          Clothings Hot<br/>
-          <span className="info-name">Shoe Collection</span>
-          Accessories
-        </h2>
+      <div className= "head">
+       <h2>Clothings Hot</h2>
+       <h2>Shoes Collections</h2>  
+       <h2>Accessories</h2>
+
       </div>
 
       {/* Content Section */}

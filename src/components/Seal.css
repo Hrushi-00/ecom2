@@ -4,10 +4,31 @@ body {
     padding: 0;
 
   }
+  .head{
+    
+    margin-top: 90px;
+    position:absolute;
+    background-color: #ffffff;
+    z-index: 1;
+    width: 100px;
+    height: 200px;
+    content: "";
+    align-items: self-start;
+    /* padding: 0 20px; */
+    /* font-size: 20px; */
+     }
+  @media screen and (max-width: 1040px){
+    .head{
+      padding: 0 40px;
+       width: 40%;
+      
+    }
+  }
+  
   
   .main-head {
         background-color: #f3f2ee;
-    margin-top: 90px;
+    margin-top: 50px;
     padding: 80px;
     display: flex;
   }
@@ -21,18 +42,35 @@ body {
   .head h2 {
     font-family: "Nunito Sans", sans-serif;
     font-weight: 300;
-    font-size: 40px;
+    font-size: 35px;
     color: #888;
-    gap: 20px;
-    display:grid;
+    margin-left: 30px;
+    /* gap: 20px; */
+    /* display:grid; */
    
   }
   @media screen and (max-width: 1040px){
     .head h2{
-      padding: 0px 40px;
+      font-size: 25px;
       
     }
   }
+  .head h2:nth-child(1) {
+    /* Styles for the first h2 */
+    color: #888;
+  }
+  
+  .head h2:nth-child(2) {
+    /* Styles for the second h2 */
+    color: #333;
+  }
+  
+  .head h2:nth-child(3) {
+    /* Styles for the third h2 */
+    color: #888;
+  }
+  
+ 
   .info-name
   {
     color: #000;
@@ -44,9 +82,9 @@ body {
   
   .contents-info {
     display: flex;
-    justify-content: space-between;
+  
     align-items: center;
-    margin-top: 20px;
+    
   }
   @media screen and (max-width: 1040px) {
     .contents-info{
@@ -60,12 +98,16 @@ body {
   
   .product-image {
     width: 400px;
+    margin-top: 40px;
     border-radius: 8px;
+    margin-left: 320px;
+    
   }
   @media screen and (max-width: 1040px){
     .product-image{
-      margin-top: 20px;
+      margin-top: 290px;
       width: 300px;
+      margin-left: 60px;
     }
   }
   
@@ -84,7 +126,7 @@ body {
   @media screen and (max-width: 1040px){
     .sale-price{
       right: 40px;
-      top: -15px;
+      top: 220px;
     }
   }
   

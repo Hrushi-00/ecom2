@@ -6,6 +6,8 @@ import Carousel from '../components/Carousel'
 import ClothingCollections from '../components/ClothingCollections'
 import Carts from '../components/Carts'
 import Seal from '../components/Seal'
+import Instagram from '../components/Instagram'
+import FashionNew from '../components/FashionNew'
 
 
 
@@ -19,6 +21,8 @@ const Home = () => {
     <ClothingCollections />
     <Carts />
     <Seal />
+    <Instagram />
+    <FashionNew/>
 
    
     </div>
