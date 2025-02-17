@@ -49,7 +49,7 @@ const ProductSummaryPage = ({ items }) => {
                     style={{
                       position: "relative",
                       bottom: -1,
-                      padding: "7px",
+                      padding: "0px 0px 0px 25px ",
                       marginLeft: "8px",
                     }}
                   >

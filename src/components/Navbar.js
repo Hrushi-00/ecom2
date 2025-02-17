@@ -5,7 +5,7 @@ import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import logo from "../assets/logo.png";
 import { useSelector } from "react-redux";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaBars, FaTimes, FaUserAlt   } from "react-icons/fa";
 import Search from "./Search";
 
 const Navbar = () => {
@@ -93,9 +93,12 @@ const Navbar = () => {
 
           
       <div className="cart">
-     
+      <div className="user">
+          <FaUserAlt size={25} style={{ color: "#000000"}} />
+         </div>
         <IoCartOutline onClick={carthandler} />
         <span>{cartCount}</span>
+       
         
       </div>
 
@@ -104,9 +107,12 @@ const Navbar = () => {
           <FaTimes size={20} style={{ color: "#000000" }} />
         ) : (
           <FaBars size={20} style={{ color: "#000000" }} />
-        )}
-      </div>
-    </div>}
+         )}
+         </div>
+        
+          
+    </div>
+    }
    </>
   );
 };

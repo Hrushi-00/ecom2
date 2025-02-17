@@ -19,9 +19,20 @@ const Carousele = () => {
     <div className="Carouse">
    
         
-      <Carousel responsive={responsive}>{product}</Carousel>
+      {/* <Carousel responsive={responsive}>{product}</Carousel> */}
       
-      
+      <Carousel
+        responsive={responsive}
+        autoPlay={true}               // Enables auto play
+        autoPlaySpeed={4000}          // Sets speed for each slide in milliseconds
+        infinite={true}               // Ensures the carousel is infinite (loops back)
+        arrows={false}                // Hides the arrows for manual navigation
+        // centerMode={true}             // Enables the center mode to highlight the active slide
+        // swipeable={true}              // Allows swiping on touch devices
+        // draggable={true}              // Allows dragging the carousel on desktop
+      >
+        {product}
+      </Carousel>
     </div>
   )
 }

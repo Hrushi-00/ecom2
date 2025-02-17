@@ -31,9 +31,14 @@ background-clip: text;
 {
     font-size: 1.2rem;
     font-weight: 500;
-}
+} 
 .hamburger{
     display: none;
+}
+@media screen and (max-width: 480px){
+  .hamburger{
+    margin-right: 60px;
+  }
 }
 @media screen and (max-width: 1040px){
 .nav-menu{
@@ -49,6 +54,7 @@ background-clip: text;
     z-index: -3;
     transition: 0.3s;
 }
+
 .nav-menu.active{
 left:0 ;
 }
@@ -71,12 +77,29 @@ left:0 ;
   .cart{
     font-size: 30px;
     cursor: pointer;
+    display: flex;
+    
+    
+   
+  }
+  .user{
+    padding:0px 10px 0px 10px;
+    font-size: 30px;
+   
+    
+    
+  }
+  @media screen and(max-width: 1040px) {
+    .user{
+      size: 10px;
+    }
   }
   span{
     font-size: 20px;
     position: relative;
     bottom: 20px;
-    right: 4px;
+    right: 15px;
+    margin: 10px;
   }
   .search-bar{
     font-size: 25px;

@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import "./FashionNew.css";
 import img1 from "../assets/blog/blog-1.jpg";
@@ -39,7 +40,10 @@ function FashionNew() {
         <div className="project-container">
           {fetchApi.map((val) => (
             <div key={val.id} className="fashion-item">
+              <div className="new-trend-img">
               <img src={val.ImageData} alt={val.title} />
+              </div>
+            
               <div className="project-info">
               <span> <img src={val.calendar} alt="calendar" />{val.date}</span>
               <h3>{val.title}</h3>
