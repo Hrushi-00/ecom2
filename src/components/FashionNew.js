@@ -46,7 +46,7 @@ function FashionNew() {
             
               <div className="project-info">
               <span> <img src={val.calendar} alt="calendar" />{val.date}</span>
-              <h3>{val.title}</h3>
+              <h4>{val.title}</h4>
               <a href="#">Read More</a>
               </div>
             </div>

@@ -8,6 +8,8 @@ import Carts from '../components/Carts'
 import Seal from '../components/Seal'
 import Instagram from '../components/Instagram'
 import FashionNew from '../components/FashionNew'
+import Footer from '../components/Footer'
+
 // import Focuscardsdemo from '../components/ui/Focuscardsdemo'
 
 
@@ -24,6 +26,7 @@ const Home = () => {
     <Instagram />
     <FashionNew/>
     {/* < Focuscardsdemo /> */}
+    < Footer />
 
    
     </div>

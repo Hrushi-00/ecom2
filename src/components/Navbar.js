@@ -36,6 +36,9 @@ const Navbar = () => {
   const carthandler = () => {
     navigate("/addtocart");
   };
+  const userhandler = () => {
+    navigate("/login");
+  };
 
   // Update cart count from Redux and sync with localStorage
   useEffect(() => {
@@ -94,11 +97,11 @@ const Navbar = () => {
           
       <div className="cart">
       <div className="user">
-          <FaUserAlt size={25} style={{ color: "#000000"}} />
+          <FaUserAlt size={25} style={{ color: "#000000"}} onClick={userhandler}  />
          </div>
         <IoCartOutline onClick={carthandler} />
         <span>{cartCount}</span>
-       
+        
         
       </div>
 

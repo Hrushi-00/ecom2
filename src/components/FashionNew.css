@@ -1,13 +1,16 @@
 
 .fashionNew-head{
-    margin-top: 80px;
+    margin: 80px 0px 90px 0px ;
+    
 }
 .fashion-name , .fashion {
     margin-bottom: 45px;
     text-align: center;
    
 }
-
+.project-info h4{
+    color: #333;
+}
 @media screen and (max-width: 1040px) {
     .fashion-name {
 

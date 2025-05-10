@@ -11,14 +11,14 @@ import { Provider } from "react-redux";
 import appStore from "./utils/appStore";
 import PaymentDetails from "./components/pages/PaymentDetails"
 import PaymentSucess from "./components/pages/PaymentSucess"
-
+import Login from "./components/loginPages/Login";
 const App = () => {
   
   return (
     <Provider store={appStore}>
   
    
-    <Routes>
+  <Routes>
     
       <Route path="/" element={<Home/>} />
       <Route path="/shop" element={<Shop/>} />
@@ -28,7 +28,8 @@ const App = () => {
       <Route path="/Addtocart" element={<Addcart />}/>
       <Route path="/paymentdetail" element={<PaymentDetails/>} />
       <Route path="/paymentsucess" element={<PaymentSucess/>}/>
-     
+      <Route path="/login" element={<Login/>} />
+      
     </Routes>
     
   
